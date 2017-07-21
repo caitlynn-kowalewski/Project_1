@@ -1,6 +1,6 @@
 
 
-//first, define variables
+//first, define variables.
 
 var quotes;
 var randomnum;
@@ -30,15 +30,15 @@ quotes = [
 
 ];
 
-//call a function that generates a random number 
+//call a function that generates a random number, then takes the random number to grab a quote from the array.  
 
 function getRandomQuote(){
 	randomnum = Math.floor(Math.random() * quotes.length);
   return quotes[randomnum];
  };
 
-/*create a function named "printQuote" that calls "getRandomQuote" and stores the returned random number in a variable (quoteSelected).
-*/
+/*create a function named "printQuote" that calls "getRandomQuote" and stores the returned random quote in a variable. The random quote 
+along with its source is then displayed on the website.*/
 
 function printQuote () {
    quoteDisplayed = getRandomQuote();
